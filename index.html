@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    
+    <header class="flex aic">
+        Game
+    </header>
+    <div id="app">
+        <div class="game_container">
+            <div class="game_player player1 active flex column aic jcc">
+                <h2 class="box">BERNARD</h2>
+                <div class="score_global box flex aic jcc" id="playerOneGlobalValue">150</div>
+                <div class="current_score box flex column aic">
+                    <div class="current">Current</div>
+                    <div class="score" id="playerOneRoundValue">10</div>
+                </div>
+            </div>
+            <div class="game_player player2 flex column aic jcc">
+                <h2 class="box">FRANCK</h2>
+                <div class="score_global box  flex aic jcc" id="playerTwoGlobalValue">50</div>
+                <div class="current_score box flex column aic">
+                    <div class="current">Current</div>
+                    <div class="score" id="playerTwoRoundValue">10</div>
+                </div>
+            </div>
+           
+            <div class="game_options box  flex column aic jcsb">
+                    <div class="game_option_item" id="newGame">NEW</div>
+                    <div class="game_option_item">
+                        <img class="box" src="/assets/images/face4.png" width="40" alt="">
+                    </div>
+                    <div class="game_option_item" id="roll">ROLL</div>
+                    <div class="game_option_item" id="hold">HOLD</div>
+            </div>
+        </div>
+    </div>
+    <div class="modal none">
+        <div class="overlay"></div>
+        <div class="modal-content">
+            <div class="modal-header">Information</div>
+            <div class="modal-body">
+                Bravo : Larry a gagné avec 500 points.
+            </div>
+            <div class="modal-footer">
+                <button>NOUVELLE PARTIE</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./assets/app.js"></script>
+    <!-- <script type="module" src="./assets/js/main.js"></script>  -->
+</body>
+</html>
